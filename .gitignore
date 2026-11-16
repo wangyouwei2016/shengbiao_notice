@@ -1,0 +1,17 @@
+# Environments / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.venv/
+
+# Runtime data
+data/
+logs/
+
+# OS / editor
+.DS_Store
+*.swp

@@ -1,0 +1,17 @@
+[Unit]
+Description=辽宁医保药品交易订单监控
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/wife-shengbiao-notice/wife_work
+ExecStart=/root/wife-shengbiao-notice/wife_work/venv/bin/python main.py
+Restart=always
+RestartSec=30
+Environment=HEADLESS=true
+Environment=PYTHONUNBUFFERED=1
+Environment=TZ=Asia/Shanghai
+
+[Install]
+WantedBy=multi-user.target
